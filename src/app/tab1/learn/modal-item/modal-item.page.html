@@ -1,0 +1,26 @@
+<ion-content>
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-label>
+          <ion-icon name="close" (click)="dismiss()"></ion-icon>
+        </ion-label>
+        <ion-button (click)="testItem()" size="6" expand="block	" fill="outline" color="danger" name="test">
+          <ion-icon slot="end" name="flask"></ion-icon>
+          Test
+        </ion-button>
+        <ion-button (click)="learnItem()" size="6" expand="block	" fill="outline" color="danger" name="maruza">
+          <ion-icon slot="end" name="document-text"></ion-icon>
+          Maruza matni
+        </ion-button>
+        <ion-button (click)="videoItem()" size="6" expand="block	" fill="outline" color="danger" name="video">
+          <ion-icon slot="end" name="film"></ion-icon>
+          Video
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

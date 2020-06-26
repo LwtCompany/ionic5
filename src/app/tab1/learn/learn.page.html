@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-back-button defaultHref="tabs/tab1"></ion-back-button>
+      <ion-title>{{catId.title}}</ion-title>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <ion-list *ngFor="let item of allThemes">
+          <ion-item class="Themes" detail color="secondary" (click)="learnItem(item)">
+            <ion-label>{{item.title}}</ion-label>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

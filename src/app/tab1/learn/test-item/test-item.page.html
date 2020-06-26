@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons>
+      <ion-back-button defaultHref="tabs/tab1/learn"></ion-back-button>
+      <ion-title>{{choosentheme.themeId}}: Mavzuga oid testlar!</ion-title>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>
+
+          </ion-label>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of allTests">
+
+      <ion-item>
+
+
+        {{item.question}}
+      </ion-item>
+      <ion-item>
+        {{item.options}}
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+</ion-content>

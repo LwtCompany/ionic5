@@ -1,0 +1,7 @@
+{
+  "name": "Dasturlash",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
